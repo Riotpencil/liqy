@@ -1,0 +1,736 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mydomain.org/mysite/ntee/%E4%BA%8C%E6%88%BF%E5%AE%A4%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%EF%BC%88%E7%A3%BA%E8%83%BA%E7%B1%BB%E8%8D%AF%E7%89%A9%E7%9A%84%E8%8D%AF%E4%BB%A3%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%AE%9E%E9%AA%8C%EF%BC%89/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>二房室数学建模（磺胺类药物的药代动力学实验） - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              二房室数学建模（磺胺类药物的药代动力学实验）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    list
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            list
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Welcome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xue01.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      研究背景
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="研究背景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      磺胺类药物的测定方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验材料
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验结果
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="实验结果">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      结果分析与药代动力学参数计算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验室拟合结果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      补充：对数线性拟合
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      思考题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="思考题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、为什么给药初始阶段要频繁取血？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、为什么设立对照组？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、各参数的意义
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、各参数的意义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      二房室模型构建
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      微分方程求解
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      图像拟合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      附录
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>二房室数学建模（磺胺类药物的药代动力学实验）</h1>
+
+<p>2024-10-16
+姓名：李清宇 <br />
+班级：临床二班<br />
+日期：2024年10月15日<br />
+温度：$20^\circ C$ <br />
+湿度：$39\%$</p>
+<h3 id="_1">研究背景</h3>
+<h4 id="_2">磺胺类药物的测定方法</h4>
+<p>磺胺类药物苯环上的氨基被亚硝酸氧化，生成苯基重氮盐。苯基重氮盐与苯酚反应生成对羟基偶氮苯呈桔红色。
+![[IMG_0187.jpeg]]
+对羟基偶氮苯呈桔红色，波长为525nm，可用吸光光度计测量其浓度。光度值和浓度转化公示如下：
+![[IMG_0189.jpeg|400]]</p>
+<h3 id="_3">实验材料</h3>
+<p><strong>实验动物</strong>：新西兰大白兔、雄性、2.2 kg
+<strong>实验药品</strong>：磺胺嘧啶
+<strong>实验仪器</strong>：移液枪、离心管、离心机、试管、混均仪、分光光度计</p>
+<h3 id="_4">实验方法</h3>
+<ol>
+<li>称重，麻醉，分离颈总动脉，动脉插管，取空白血</li>
+<li>给药：磺胺嘧啶（0.3 g/kg，耳缘静脉）</li>
+<li>取血：0、3、5、15、30、45、60、90 min取动脉血</li>
+<li>测定血药浓度</li>
+<li>绘制时量曲线、建立模型、计算参数
+![[IMG_0191.jpeg]]</li>
+</ol>
+<h3 id="_5">实验结果</h3>
+<h4 id="_6">实验数据</h4>
+<table>
+<thead>
+<tr>
+<th>T(min)</th>
+<th>90</th>
+<th>60</th>
+<th>45</th>
+<th>30</th>
+<th>15</th>
+<th>3</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>C(μg/ml)</strong></td>
+<td>327.38</td>
+<td>464.28</td>
+<td>513.88</td>
+<td>592.23</td>
+<td>559.23</td>
+<td>956.35</td>
+<td>1880.95</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_7">结果分析与药代动力学参数计算</h4>
+<p>![[IMG_1807.jpeg]]</p>
+<h4 id="_8">实验室拟合结果</h4>
+<p>![[IMG_1808.jpeg]]</p>
+<h4 id="_9">补充：对数线性拟合</h4>
+<p>![[Rplot.png|300]]
+![[Screenshot 2024-10-15 at 23.38.49.png|750]]
+对数线性拟合结果R方为0.9454，并不是很大，该数据组并不是十分线性。有理由拒绝原假设——一房室模型。</p>
+<h3 id="_10">思考题</h3>
+<h4 id="_11">一、为什么给药初始阶段要频繁取血？</h4>
+<p>因为初始阶段药物代谢快，血药浓度下降快，下降一定浓度所需时间间隔更短，取样需要更频繁。</p>
+<h4 id="_12">二、为什么设立对照组？</h4>
+<p>排除动物内源性物质、实验操作等无关变量对结果的影响</p>
+<h4 id="_13">三、各参数的意义</h4>
+<p>本人尝试用线性代数方法重新算一遍，各参数意义就不言自明了。</p>
+<h5 id="_14">二房室模型构建</h5>
+<p>本篇数学理论参考<a href="https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/pages/unit-iv-first-order-systems/matrix-exponentials/">https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/pages/unit-iv-first-order-systems/matrix-exponentials/</a>
+借用ppt上的图
+![[Screenshot 2024-10-16 at 07.52.56.png]]
+这是一个很常见的二元微分方程模型，解法固定。
+我们可以用如下方程表示该二房室系统：
+$$\frac{\mathrm{d}}{\mathrm{d} t} \begin{bmatrix}c \c_p\end{bmatrix}=\begin{bmatrix} -(k_{12}+k_{10}) &amp; k_{21}\k_{12}  &amp;-k_{21}\end{bmatrix}\begin{bmatrix}c \c_p\end{bmatrix}$$
+为简化表示，我们设：
+$$W=\begin{bmatrix} -(k_{12}+k_{10}) &amp; k_{21}\k_{12}  &amp;-k_{21}\end{bmatrix}$$
+$$u(t)=\begin{bmatrix}c \c_p\end{bmatrix}, u_0=\begin{bmatrix}c_0 \0\end{bmatrix}$$</p>
+<h5 id="_15">微分方程求解</h5>
+<p>由存在且唯一性定理易知该方程通解为：$$u(t)=e^{Wt}u_0$$
+将其展开再合并：$$e^{Wt}=VV^{-1}+V\Lambda tV^{-1}+\frac{V(\Lambda t)^2V^{-1}}{2!}+...=V(1+\Lambda t+(\Lambda t)^2+...)V^{-1} =Ve^{\Lambda t}V^{-1}$$
+其中$V$为特征向量，$\Lambda$为特征值矩阵。</p>
+<p>下面求解A的特征值和特征向量：$$<a href="\lambda +k_{21}">\lambda +(k_{12}+k_{10})</a>-k_{12}k_{21}=0$$$$\lambda^2+(k_{10}+k_{12}+k_{21})\lambda+k_{10}k_{21}=0$$
+解出两个特征值：$$\lambda_1=\frac{-(k_{12}+k_{21}+k_{10})+\sqrt{\Delta}}{2} , \lambda_2=\frac{-(k_{12}+k_{21}+k_{10})-\sqrt{\Delta}}{2} $$
+表示成矩阵形式：$$\Lambda=\begin{bmatrix} \frac{-(k_{12}+k_{21}+k_{10})+\sqrt{\Delta}}{2}
+  &amp; 0\
+  0&amp; \frac{-(k_{12}+k_{21}+k_{10})-\sqrt{\Delta}}{2} 
+\end{bmatrix}$$
+解出其对应的特征向量为：$$V=\begin{bmatrix}\frac{k_{21}}{\lambda_1+k_{12}+k_{10}} 
+  &amp; \frac{k_{21}}{\lambda_2+k_{12}+k_{10}}\1
+  &amp;1
+\end{bmatrix}$$
+为简化，设：$$X= \frac{k_{21}}{\lambda_1+k_{12}+k_{10}} ,Y= \frac{k_{21}}{\lambda_2+k_{12}+k_{10}} $$
+求出特征向量的逆：$$V^{-1}=\frac{1}{X-Y}\begin{bmatrix}
+ 1 &amp; -1\
+ -Y &amp;X
+\end{bmatrix} $$
+最后我们得到通解：$$e^{Wt}u_0=\frac{1}{X-Y}\begin{bmatrix}X  &amp; Y\1  &amp;1\end{bmatrix}\begin{bmatrix}e^{\lambda_1t}  &amp; 0\0  &amp; e^{\lambda_2t}\end{bmatrix}\begin{bmatrix}  1&amp; -Y\  -1&amp;X\end{bmatrix}u_0$$
+将其展开即可，不过这种方法比较麻烦，我们可以用待定系数法，利用特征向量的特性简化。
+先将$u_0$向两个特征向量投影分解：$$u_0=c_1v_1+c_2v_2$$
+直接带入：$$u(t)=e^{Wt}u_0=e^{Wt}(c_1v_1+c_2v_2)=c_1e^{\lambda_1t}v_1+c_2e^{\lambda_2t}v_2$$
+带入初始值$u_0=\begin{bmatrix} c_0\0\end{bmatrix}$解出：$$\begin{bmatrix}c_1 \c_2\end{bmatrix}=\begin{bmatrix}\frac{1}{X-Y}  \\frac{1}{Y-X}\end{bmatrix}$$
+<em>注：这里我一开始糊涂了把$c_2$当成一阶导系数了，算了好长时间。这个模型和二阶线性方程组解法很像，不要弄混了。</em></p>
+<p>$c(t)$表达式为：
+$$c(t)=c_1Xe^{\lambda_1t}+c_2Ye^{\lambda_2t}$$
+带入$X,Y$得到：
+$$c(t)=c_0\frac{\lambda_1+k_{21}}{\lambda_1-\lambda_2}e^{\lambda_1t}-c_0\frac{k_{21}+\lambda_{2}}{\lambda_1-\lambda_2}e^{\lambda_2t}$$</p>
+<p>这里有一个技巧，用到了韦达定理$\lambda_1+\lambda_2=-(k_{10}+k_{12}+k_{21})$。</p>
+<p>这就是二房室模型的求解了，我这里的$\lambda_2,\lambda_1$对应ppt中的$-\alpha,-\beta$。</p>
+<h4 id="_16">图像拟合</h4>
+<p>ppt里没有算$c_p$，我这里算一下：$$c_p(t)=c_1e^{\lambda_1t}+c_2e^{\lambda_2t}$$
+带入$c_1,c_2$得：$$c_p(t)=\frac{k_{12}}{\lambda_1-\lambda_2}(e^{\lambda_1t}-e^{\lambda_2t})c_0$$
+下面是拟合图像：
+![[二房室拟合.png|500]]
+可见$c_p$会先升高后下降，体内总浓度一直下降。</p>
+<h4 id="_17">附录</h4>
+<p>下面是R画图时用到的代码</p>
+<pre><code class="language-R"># 定义函数f1, f2和f3
+f1 &lt;- function(x) {
+  (0.0639/(0.0065-0.2412))*(exp(-0.2412*x)-exp(-0.0065*x))*1880.95
+}
+f2 &lt;- function(x) {
+  1906.3963*(exp(-0.2412*x))+exp(-0.0065*x)*617.7719
+}
+f3 &lt;- function(x) {
+  f1(x) + f2(x)
+}
+
+# 设置x的取值范围
+x &lt;- seq(0, 90, by = 0.1)
+
+# 绘制图形
+plot(x, f1(x), type = 'l', col = 'red', ylim = c(0, max(f3(x))), ylab = &quot;C(ug/ml)&quot;, xlab = &quot;T(min)&quot;, main = &quot;Two-Chamber Fitting&quot;)
+lines(x, f2(x), col = 'blue')
+lines(x, f3(x), col = 'green')
+
+# 添加图例
+legend(&quot;topright&quot;, legend = c(expression(c[0]), expression(c[p]), expression(c[0] + c[p])), col = c(&quot;red&quot;, &quot;blue&quot;, &quot;green&quot;), lty = 1)
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="https://cdn.vercel-insights.com/v1/analytics.js"></script>
+      
+    
+  </body>
+</html>

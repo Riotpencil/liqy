@@ -1,0 +1,926 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mydomain.org/mysite/ntee/%E9%93%9C%E6%AD%BB%E4%BA%A1lncRNA%E5%A4%8D%E7%8E%B0/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>铜死亡lncRNA复现 - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="yellow" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              铜死亡lncRNA复现
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    list
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            list
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Welcome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xue01.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据来源
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据整理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据整理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      基因表达矩阵
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      临床信息整理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lncrna" class="md-nav__link">
+    <span class="md-ellipsis">
+      铜死亡相关lncRNA筛选
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lasso-cox" class="md-nav__link">
+    <span class="md-ellipsis">
+      lasso-cox 分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="lasso-cox 分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cox" class="md-nav__link">
+    <span class="md-ellipsis">
+      单因素cox分析
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lasso-cox_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lasso-cox回归
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lasso-cox回归">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#u" class="md-nav__link">
+    <span class="md-ellipsis">
+      U型图、轨迹图
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      基因再筛
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cox_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      多因素cox分析
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      附代码
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="附代码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exp-clin" class="md-nav__link">
+    <span class="md-ellipsis">
+      exp, clin数据整理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pearson-correlation-lncrna" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pearson correlation 铜死亡相关lncRNA筛选
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lasso-coxcox" class="md-nav__link">
+    <span class="md-ellipsis">
+      lasso-cox分析（多因素cox还没做）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>铜死亡lncRNA复现</h1>
+
+<p>Prognostic signature construction and immunotherapy response analysis for Uterine Corpus Endometrial Carcinoma based on cuproptosis-related lncRNAs</p>
+<h2 id="_1">数据来源</h2>
+<p>TCGA-UCEC
+https://xenabrowser.net/datapages/?cohort=GDC%20TCGA%20Endometrioid%20Cancer%20(UCEC)&amp;removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443
+- 表达量（包含lnc）
+    - 原60660*585
+    - 整理后59360*488
+- 临床信息（年龄、良恶性、stage）（没有TNM分期）
+    - 488
+- 生存信息（OS、OS.time）
+    - 488</p>
+<p>lncRNA集
+    去重后16000多</p>
+<p>基因-探针映射（需去除小数点）</p>
+<p>GEO数据（R中可以下载）</p>
+<p>铜死亡相关基因（来源于前期研究）（19）</p>
+<pre><code class="language-R">target_genes &lt;- c(&quot;NFE2L2&quot;, &quot;NLRP3&quot;, &quot;ATP7B&quot;, &quot;ATP7A&quot;, &quot;SLC31A1&quot;, &quot;FDX1&quot;, &quot;LIAS&quot;, &quot;LIPT1&quot;, &quot;LIPT2&quot;, &quot;DLD&quot;, &quot;DLAT&quot;, &quot;PDHA1&quot;, &quot;PDHB&quot;, &quot;MTF1&quot;, &quot;GLS&quot;, &quot;CDKN2A&quot;, &quot;DBT&quot;, 
+&quot;GCSH&quot;, &quot;DLST&quot;)
+</code></pre>
+<h2 id="_2">数据整理</h2>
+<p>我的课题也可以用这些数据，都是子宫内膜癌的
+疑问：表达数据里有很多整数怎么回事，而且是和小数交错出现（比如下面第二行）
+![[Pasted image 20241121151451.png]]</p>
+<h4 id="_3">基因表达矩阵</h4>
+<p>表达量矩阵、探针矩阵去除小数点
+基因名称映射
+（如有需要）log处理、归一化处理...
+去重（方法众多）
+合并数据 <strong>（一定要先去重再融合，否则会多出很多莫名其妙的项）</strong>
+去除临床信息矩阵中未出现的样本</p>
+<p>lncRNA映射（我没直接下载到名称，所以要转换一下）
+去重
+从表达量矩阵中提取对应数据</p>
+<h4 id="_4">临床信息整理</h4>
+<p>将生存信息合并到临床信息中，注意样本要对应
+（可选）修改行名</p>
+<h2 id="lncrna">铜死亡相关lncRNA筛选</h2>
+<p>“Based on the expression levels of lncRNAs and CRGs, Pearson correlation analysis was adopted to determine the potential CRLs (P &lt;0.001, | Pearson R |&gt; 0.4) and draw the Sankey diagram of the coexpression relationship.”</p>
+<p>sankey图感觉没什么用懒得画了</p>
+<p>Pearson correlation 过程很慢（因为要双层循环，每次内层要遍历16000多个lncRNA），建议打印中间值缓解等待焦虑</p>
+<pre><code class="language-R">[1] &quot;NFE2L2&quot;
+[1] 0 4
+[1] &quot;NLRP3&quot;
+[1] 949   4
+[1] &quot;ATP7B&quot;
+[1] 1052    4
+</code></pre>
+<p>筛选结果：去重前13417个，去重后2968个（和exp的处理有关）</p>
+<p>作者用Pearson correlation R&gt;0.4筛选，这个P&lt;0.001有点奇怪，我的结果在10E-24~10E-160量级，不知道为什么这么小
+我又随机抽了结果中的两行单独计算，确实有这么小，估计是因为样本量太大了</p>
+<pre><code class="language-R">library(readxl)
+dt1 &lt;- read_excel(&quot;C:/Users/Enki/Desktop/pppp.xlsx&quot;)
+dt1 &lt;- as.data.frame(dt1)
+rownames(dt1) &lt;- dt1[, 1]
+dt1 &lt;- dt1[, -1]
+dt1 &lt;- as.matrix(dt1)
+result &lt;- cor.test(dt1[&quot;NFE2L2&quot;, ], dt1[&quot;FGD5-AS1&quot;, ], method = &quot;pearson&quot;)
+correlation &lt;- result$estimate
+p_value &lt;- result$p.value
+&gt; correlation
+[1] 0.8320935 
+&gt; p_value
+[1] 2.263616e-151
+</code></pre>
+<p>作者没有提供中间数据，即筛选出来了哪些基因（这个对于复现很重要，文章太简略了）、哪些基因之间有相关性...</p>
+<h2 id="lasso-cox">lasso-cox 分析</h2>
+<h4 id="cox">单因素cox分析</h4>
+<p>（合并后的）临床矩阵随机分为两组，一组用于构建模型另一组用于验证
+    关于1：1拆分有待商榷，个人认为可以4：1或其它</p>
+<p>本人构建模型直接取了前300，因为随机所以必然无法得到一模一样结果。作者没有提供数据，发邮件询问也没有回复</p>
+<p>临床矩阵的生存状态（OS）、生存时间（OS.time）信息
+根据上一步筛选的基因提取表达量信息，转置并按照临床矩阵中的样本顺序排列，以待合并</p>
+<p>单因素cox初筛：遍历筛选到的基因，动态地将基因合并到临床矩阵末尾，进行cox计算，当p &lt; 0.05 时保留，运算后及时删去基因列
+    正好筛出了1000个</p>
+<h4 id="lasso-cox_1">Lasso-cox回归</h4>
+<p>根据初筛的基因做lasso-cox回归，lambda.min=0.04344</p>
+<h6 id="u">U型图、轨迹图</h6>
+<p>![[Pasted image 20241121191951.png|400]]
+注：横坐标中的log其实是ln</p>
+<h6 id="_5">基因再筛</h6>
+<p>去除系数为0的基因，筛选出15个
+左边是我的，右边是人家的
+![[Pasted image 20241121192207.png|300]]
+令人欣慰的是居然有重合的：AC078860.3  LINC01224
+文章中的29个有10个在我单因素cox初筛的1000个里</p>
+<pre><code class="language-R"># 重合的10个
+c(&quot;Z99572.1&quot;, &quot;NNT-AS1&quot;, &quot;HMGN3-AS1&quot;, &quot;AL035530.2&quot;, &quot;AC244517.1&quot;, &quot;AL031778.1&quot;, &quot;AC078860.3&quot;, &quot;BX322234.1&quot;, &quot;CDKN2A-DT&quot;, &quot;LINC01224&quot;)
+# 我的15个
+c(&quot;PRDX6-AS1&quot;, &quot;AL603832.1&quot;, &quot;TNFRSF10A-AS1&quot;, &quot;AC078860.3&quot;, &quot;AP003096.1&quot;, &quot;AP001160.1&quot;, &quot;AC104758.1&quot;, &quot;AC055764.2&quot;, &quot;AL035603.1&quot;, &quot;AC004884.2&quot;, &quot;LINC01929&quot;, &quot;AC107057.1&quot;, &quot;AC092969.1&quot;, &quot;AC020934.1&quot;, &quot;LINC01224&quot;)
+# 人家的29个
+c(&quot;RAB11B-AS1&quot;, &quot;HMGN3-AS1&quot;, &quot;AC244517.7&quot;, &quot;AF131215.5&quot;, &quot;AC007552.2&quot;, &quot;Z69733.1&quot;, &quot;AL031778.1&quot;, &quot;AL035530.2&quot;, &quot;AC083799.1&quot;, &quot;AC118344.1&quot;, &quot;AC244517.1&quot;, &quot;MIR924HG&quot;, &quot;LINC00954&quot;, &quot;AC092614.1&quot;, &quot;AL161663.2&quot;, &quot;AP000787.1&quot;, &quot;AL158212.3&quot;, &quot;LINC02035&quot;, &quot;AC026202.2&quot;, &quot;BX322234.1&quot;, &quot;AC103563.2&quot;, &quot;LINC01224&quot;, &quot;AC104794.5&quot;, &quot;NNT-AS1&quot;, &quot;AC078860.3&quot;, &quot;Z99572.1&quot;, &quot;AC006504.5&quot;, &quot;AL450384.1&quot;, &quot;CDKN2A-DT&quot;)
+</code></pre>
+<h4 id="cox_1">多因素cox分析</h4>
+<p>将筛到的15个基因从exp中提取表达信息，一个基因为一列按照临床样品的顺序添加，以便于cox分析</p>
+<h2 id="_6">附代码</h2>
+<h4 id="exp-clin">exp, clin数据整理</h4>
+<pre><code class="language-R">setwd(&quot;C:/Users/Enki/Desktop/UCEC&quot;)
+library(tidyverse)
+library(dplyr)
+library(stringr)
+library(limma)
+library(sva)
+library(clusterProfiler)
+library(tinyarray)
+library(data.table)
+# check.names 一定要f，如果你想省事的话
+exp &lt;- read.table(&quot;TCGA-UCEC.star_counts.tsv&quot;, header=T,sep =&quot;\t&quot;,check.names=F) 
+exp[[1]] &lt;- sapply(exp[[1]], function(x) strsplit(x, &quot;\\.&quot;)[[1]][1]) 
+
+# ID转化
+map &lt;- read.table(&quot;gencode.v36.annotation.gtf.gene.probemap&quot;, header=T,sep =&quot;\t&quot;,check.names=F)
+map[[1]] &lt;- sapply(map[[1]], function(x) strsplit(x, &quot;\\.&quot;)[[1]][1]) 
+map&lt;- map[!duplicated(map[[1]]), ]
+# 取整后ID和gene列均有重复，原60660列，若直接融合会变为60748列（(60660-60616)*2+60660=60784）
+exp &lt;- exp[!duplicated(exp[[1]]), ]
+exp &lt;- merge(exp, map, by.x = &quot;Ensembl_ID&quot;, by.y = &quot;id&quot;, all = FALSE )
+# 将 gene列移到前面并删除ID列
+gene_index &lt;- which(names(exp) == &quot;gene&quot;)
+exp &lt;- exp[, c(1, gene_index, setdiff(seq_along(exp), c(1, gene_index)))]
+exp &lt;- exp[, -1]
+# gene_counts &lt;- table(exp[[1]])
+
+# 将结果转换为数据框，并筛选出出现次数大于 1 的基因
+duplicate_genes &lt;- as.data.frame(gene_counts[gene_counts &gt; 1])
+colnames(duplicate_genes) &lt;- c(&quot;Gene&quot;, &quot;Count&quot;)
+
+sum &lt;- sum(duplicate_genes$Count, na.rm = TRUE)
+
+# exp %&gt;% aggregate(.~gene, FUN=mean) # 这个巨慢，没开CUDA慎用
+exp1 &lt;- exp[!duplicated(exp[,1]),] # 所以我偷懒了
+
+data &lt;- read.table(&quot;TCGA-UCEC.clinical.tsv&quot;, header=T,sep =&quot;\t&quot;) 
+data1 &lt;- data[,c(&quot;sample&quot;,&quot;tissue_type.samples&quot;,&quot;figo_stage.diagnoses&quot;,&quot;age_at_index.demographic&quot;)]
+#MX cM0 (i+)
+os &lt;- read.table(&quot;TCGA-UCEC.survival.tsv&quot;, header=T,sep =&quot;\t&quot;,check.names=F) 
+os &lt;- os[,-4]
+
+clin &lt;- merge(os, data1, by.x = 1, by.y = 1) 
+clin1 &lt;- clin[clin$sample %in% colnames(exp), ] 
+# 一行代码整理分期，十分好用
+clin1$figo_stage.diagnoses &lt;- gsub(&quot;[ABC123]&quot;, &quot;&quot;, clin1$figo_stage.diagnoses, ignore.case = TRUE)
+library(openxlsx)
+write.xlsx(clin1, &quot;clincal.xlsx&quot;)
+</code></pre>
+<h4 id="pearson-correlation-lncrna">Pearson correlation 铜死亡相关lncRNA筛选</h4>
+<pre><code class="language-R">setwd(&quot;C:/Users/Enki/Desktop/UCEC&quot;)
+library(survival)
+library(dplyr)
+library(tidyverse)
+library(readxl)
+library(networkD3)
+
+exp &lt;- read_excel(&quot;C:/Users/Enki/Desktop/UCEC/exp.xlsx&quot;)
+exp &lt;- as.data.frame(exp)
+duplicated_rows &lt;- duplicated(exp[, 1]) | duplicated(exp[, 1], fromLast = TRUE)
+exp &lt;- exp[!duplicated_rows, ]
+rownames(exp) &lt;- exp[, 1]
+exp &lt;- exp[, -1]
+
+# exp &lt;- log2(exp + 1) 
+
+#exp &lt;- t(scale(t(exp)))
+#normalize &lt;- function(x) (x - min(x)) / (max(x) - min(x))
+#exp &lt;- apply(exp, 1, normalize)
+
+# 铜死亡相关基因
+target_genes &lt;- c(&quot;NFE2L2&quot;, &quot;NLRP3&quot;, &quot;ATP7B&quot;, &quot;ATP7A&quot;, &quot;SLC31A1&quot;, &quot;FDX1&quot;, &quot;LIAS&quot;, &quot;LIPT1&quot;, &quot;LIPT2&quot;, &quot;DLD&quot;, &quot;DLAT&quot;, &quot;PDHA1&quot;, &quot;PDHB&quot;, &quot;MTF1&quot;, &quot;GLS&quot;, &quot;CDKN2A&quot;, &quot;DBT&quot;, &quot;GCSH&quot;, &quot;DLST&quot;)
+
+
+# 获取16000多lncRNA
+library(biomaRt)
+# 连接到 Ensembl 数据库
+ensembl &lt;- useMart(&quot;ensembl&quot;, dataset = &quot;hsapiens_gene_ensembl&quot;)
+# 获取 lncRNA 基因
+lncRNA_genes &lt;- getBM(
+  attributes = c(&quot;ensembl_gene_id&quot;),
+  filters = &quot;biotype&quot;,
+  values = &quot;lncRNA&quot;,
+  mart = ensembl
+)
+# 去重
+lncRNA_genes &lt;- distinct(lncRNA_genes)
+map &lt;- read.table(&quot;gencode.v36.annotation.gtf.gene.probemap&quot;, header=T,sep =&quot;\t&quot;,check.names=F)
+map[[1]] &lt;- sapply(map[[1]], function(x) strsplit(x, &quot;\\.&quot;)[[1]][1]) 
+map &lt;- map[!duplicated(map[[1]]), ]
+
+lncRNA_genes &lt;- merge(lncRNA_genes, map, by.x = &quot;ensembl_gene_id&quot;, by.y = &quot;id&quot;, all = FALSE )
+lncRNA_genes &lt;- distinct(lncRNA_genes)
+
+# 清空变量是个好习惯
+cor_results &lt;- data.frame(
+  Gene1 = character(),
+  Gene2 = character(),
+  Correlation = numeric(),
+  P.value = numeric(),
+  stringsAsFactors = FALSE
+)
+other_genes &lt;- &quot;&quot;
+pop &lt;- &quot;&quot;
+
+for (pop in target_genes) {
+  print(pop)
+  print(dim(cor_results))
+  for (other_gene in lncRNA_genes$gene) {
+    if (pop != other_gene) {
+      # 获取 lncRNA 的表达数据
+      test_data1 &lt;- as.numeric(exp[pop, ])
+      test_data2 &lt;- as.numeric(exp[other_gene, ])
+
+      # 去除缺失值
+      valid_idx &lt;- complete.cases(test_data1, test_data2)
+      test_data1 &lt;- test_data1[valid_idx]
+      test_data2 &lt;- test_data2[valid_idx]
+
+      # 跳过表达值全为0的 lncRNA 基因
+      if (all(test_data2 == 0, na.rm = TRUE)) {
+        next
+      }
+
+      # 只有当数据量大于 1 时才进行相关性计算
+      if (length(test_data1) &gt; 1 &amp;&amp; length(test_data2) &gt; 1) {
+        test &lt;- cor.test(test_data1, test_data2, method = &quot;pearson&quot;)
+
+        # 检查相关性估计值和 p 值是否为有效数值
+        if (is.finite(test$estimate) &amp;&amp; is.finite(test$p.value)) {
+          # 筛选符合条件的基因对
+          if (abs(test$estimate) &gt; 0.4 &amp;&amp; test$p.value &lt; 0.001) {
+            cor_results &lt;- rbind(cor_results, data.frame(
+              Gene1 = pop,
+              Gene2 = other_gene,
+              Correlation = test$estimate,
+              P.value = test$p.value
+            ))
+          }
+        } else {
+          next  # 如果相关性估计或 p 值无效，跳过
+        }
+      } else {
+        next  # 如果有效数据点太少，跳过该次循环
+      }
+    }
+  }
+}
+
+foo &lt;- cor_results$Gene2
+foo&lt;-unique(foo)
+write.csv(foo, &quot;foo.csv&quot;, row.names = FALSE)
+</code></pre>
+<h4 id="lasso-coxcox">lasso-cox分析（多因素cox还没做）</h4>
+<pre><code class="language-R">library(survival)
+library(glmnet)
+library(survminer)
+
+foo &lt;- read.csv(&quot;foo.csv&quot;)
+exp &lt;- read_excel(&quot;C:/Users/Enki/Desktop/UCEC/exp.xlsx&quot;)
+exp &lt;- as.data.frame(exp)
+duplicated_rows &lt;- duplicated(exp[, 1]) | duplicated(exp[, 1], fromLast = TRUE)
+exp &lt;- exp[!duplicated_rows, ]
+rownames(exp) &lt;- exp[, 1]
+exp &lt;- exp[, -1]
+clin &lt;- read_excel(&quot;C:/Users/Enki/Desktop/UCEC/clincal.xlsx&quot;)
+clin &lt;- as.data.frame(clin)
+rownames(clin) &lt;- clin$sample
+clin &lt;- clin[, -1]
+
+clin1 &lt;- head(clin, 300)
+expm1 &lt;- head(exp_matrix,300)
+
+# 对每个基因进行单变量 Cox 回归分析
+# 初始化一个空的结果数据框
+univariate_results &lt;- data.frame()
+# 初始化结果存储数据框
+univariate_results &lt;- data.frame(Gene = character(), Coef = numeric(), P_value = numeric(), stringsAsFactors = FALSE)
+
+# 遍历foo$x中的目标基因
+for (ge in foo$x) {
+    gene_data &lt;- exp[ge, rownames(clin1)] 
+    gene_data &lt;- as.vector(gene_data) # 单行的转置
+    gene_data &lt;- as.numeric(gene_data)
+    # 将基因数据作为clin数据框的一列
+    clin1$gene &lt;- gene_data
+
+    cox_model &lt;- coxph(Surv(OS.time, OS) ~ gene, data = clin1)
+    cox_summary &lt;- summary(cox_model)
+
+    # 提取相关系数和 p 值
+    coef &lt;- cox_summary$coefficients[1, 1]  # 提取第一个系数
+    p_value &lt;- cox_summary$coefficients[1, 5]  # 提取p值，通常是第五列
+
+    # 只有当 p &lt; 0.05 时才筛选
+    if (p_value &lt; 0.05) {
+      univariate_results &lt;- rbind(univariate_results, data.frame(Gene = ge, Coef = coef, P_value = p_value))
+    }
+    clin1$gene &lt;- NULL
+  }
+
+#write.csv(univariate_results, &quot;univariate_results.csv&quot;, row.names = FALSE)
+
+# 使用 Lasso-Cox 回归进行特征选择
+# 保留初筛的基因，添加表达量信息
+exp_matrix &lt;- exp
+exp_matrix &lt;- exp_matrix[, rownames(clin1), drop = FALSE]
+exp_matrix &lt;- exp_matrix[univariate_results$Gene,]
+exp_matrix &lt;- exp_matrix[, match(rownames(clin1), colnames(exp_matrix)), drop = FALSE]
+exp_matrix &lt;- t(exp_matrix)
+
+surv_data &lt;- Surv(time = clin1$OS.time, event = clin1$OS)
+
+# 数据标准化
+expm1_scaled &lt;- scale(exp_matrix)  # 对表达矩阵进行标准化
+
+# 使用glmnet绘制轨迹图
+lasso_model_new &lt;- glmnet(
+  x = expm1_scaled,           
+  y = surv_data,               
+  alpha = 1,                  # L1正则化
+  family = &quot;cox&quot;,             # Cox比例风险回归
+  type.measure = &quot;deviance&quot;,  # 使用偏差（Deviance）作为评估标准
+  nfolds = 10,                # 10flod交叉验证
+)
+plot(lasso_model_new, xvar = &quot;lambda&quot;, xlim = c(-5, -2.3), ylim = c(-1 , 1))
+
+# 使用cv.glmnet绘制U型图
+lasso_model_new &lt;- cv.glmnet(
+  x = expm1_scaled,          
+  y = surv_data,               
+  alpha = 1,                   
+  family = &quot;cox&quot;,              
+  type.measure = &quot;deviance&quot;,   
+  nfolds = 10,                
+)
+plot(lasso_model_new, xlim = c(-5, -2.2), ylim = c(9, 15)) 
+
+
+# 获取最优lambda对应的系数
+lambda_best &lt;- lasso_model_new$lambda.min
+coefficients &lt;- coef(lasso_model_new, s = lambda_best)
+
+# 转换为数据框格式并去除系数为零的基因
+coefficients_matrix &lt;- as.matrix(coefficients)
+coefficients_df &lt;- data.frame(Gene = rownames(coefficients_matrix), Coefficient = coefficients_matrix[, 1])
+coefficients_df &lt;- coefficients_df[coefficients_df$Coefficient != 0, ]  # 去除系数为零的基因
+
+# 原文章数据验证
+sql &lt;- c(&quot;RAB11B-AS1&quot;, &quot;HMGN3-AS1&quot;, &quot;AC244517.7&quot;, &quot;AF131215.5&quot;, &quot;AC007552.2&quot;, &quot;Z69733.1&quot;, &quot;AL031778.1&quot;, &quot;AL035530.2&quot;, &quot;AC083799.1&quot;, &quot;AC118344.1&quot;, &quot;AC244517.1&quot;, &quot;MIR924HG&quot;, &quot;LINC00954&quot;, &quot;AC092614.1&quot;, &quot;AL161663.2&quot;, &quot;AP000787.1&quot;, &quot;AL158212.3&quot;, &quot;LINC02035&quot;, &quot;AC026202.2&quot;, &quot;BX322234.1&quot;, &quot;AC103563.2&quot;, &quot;LINC01224&quot;, &quot;AC104794.5&quot;, &quot;NNT-AS1&quot;, &quot;AC078860.3&quot;, &quot;Z99572.1&quot;, &quot;AC006504.5&quot;, &quot;AL450384.1&quot;, &quot;CDKN2A-DT&quot;)
+filtered_data &lt;- subset(univariate_results,Gene%in% sql)
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="https://cdn.vercel-insights.com/v1/analytics.js"></script>
+      
+    
+  </body>
+</html>
